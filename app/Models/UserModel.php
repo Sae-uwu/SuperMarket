@@ -10,7 +10,7 @@ class UserModel extends Model
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     
-    protected $allowedFields    = ['username', 'password'];
+    protected $allowedFields    = ['caissier', 'password'];
 
     protected $useTimestamps = false;
 }
