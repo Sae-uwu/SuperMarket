@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Inscription</title>
+    <link rel="stylesheet" href="<?= base_url('assets/css/log.css') ?>">
 </head>
 <body>
 
-<h2>Créer un compte Caissier</h2>
-
 <?php if(session()->getFlashdata('error')): ?>
-    <p style="color:red">
+    <p class="error">
         <?= session()->getFlashdata('error') ?>
     </p>
 <?php endif; ?>
 
-<form action="<?= site_url('signup') ?>" method="post">
+<div class="auth-container">
+    <h2>Créer un compte Caissier</h2>
 
-    <label>Identifiant (Caissier) :</label>
-    <input type="text" name="caissier" required>
 
-    <br><br>
+    <form action="<?= site_url('signup') ?>" method="post">
 
-    <label>Mot de passe :</label>
-    <input type="password" name="password" required>
+        <label>Nom du caissier :</label>
+        <input type="text" name="caissier" required>
 
-    <br><br>
+        <br><br>
 
-    <button type="submit">
-        S'inscrire
-    </button>
-    <br><br>
-    <a href="/">Déjà un compte ? Se connecter</a>
-</form>
+        <label>Mot de passe :</label>
+        <input type="password" name="password" required>
 
+        <br><br>
+
+        <button type="submit">
+            S'inscrire
+        </button>
+        <br><br>
+        <a href="/">Déjà un compte ? Se connecter</a>
+
+    </form>
+
+</div>
 </body>
 </html>

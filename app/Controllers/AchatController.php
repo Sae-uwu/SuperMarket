@@ -26,10 +26,10 @@ class AchatController extends BaseController
         ->select('Achat.*, Produit.designation, Produit.prix')
         ->join('Produit', 'Produit.id = Achat.id_produit')
         ->findAll();
-        $data['total'] = $total;
         foreach ($data['achats'] as $achat) {
             $total += $achat['montant'];
         }
+        $data['total'] = $total;
 
         return view('Achat', $data);
     }

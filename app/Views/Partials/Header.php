@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="<?= base_url('assets/css/header.css') ?>">
+
 <div class="header">
-    <div class="logo"><b><i>KENNY SUPERMARKT</i></b></div>
+    <div class="logo"><b>KENNY SUPERMARKT</b></div>
     <div class="user">
-        <b><i><?php echo session()->get('caissier'); ?></i></b>
+        <b>Caissier : <?php echo session()->get('caissier'); ?></b>
     </div>
     <div class="logout">
         <a href="/logout">Se deconnecter</a>
