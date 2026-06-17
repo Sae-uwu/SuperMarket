@@ -14,7 +14,42 @@
         <hr>
     </div>
 
-    <div class="container">
+    <form method="post" action="<?= site_url('achat/enregistrer') ?>">
+        <select name="produit" id="produit">
+            <?php foreach($produits as $produit): ?>
+                <option value="<?= $produit['id'] ?>">
+                    <?= $produit['designation'] ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
+
+        <input type="number" name="quantite" min="1" required>
+
+        <button type="submit">Valider</button>
+    </form>
+
+    <div class="container-achat">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produit</th>
+                    <th>Prix Unitaire</th>
+                    <th>Quantité</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($achats as $achat): ?>
+                <tr>
+                    <td><?= $achat['designation'] ?></td>
+                    <td><?= $achat['prix'] ?></td>
+                    <td><?= $achat['quantite'] ?></td>
+                    <td><?= $achat['montant'] ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <p>Total : <span id="total"><?= $total ?></span> Ar</p>
     </div>
 </body>
 </html>

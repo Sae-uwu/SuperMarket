@@ -14,4 +14,7 @@ $routes->post('/signup', 'Auth::signUp');
 $routes->get('/logout', 'Auth::logout');
 $routes->get('/Caisse', 'CaisseController::afficherCaisse');
 $routes->post('/caisse/valider', 'CaisseController::sauvegarderCaisse');
-$routes->get('/Achats', 'AchatController::index');
+$routes->get('/achats', 'AchatController::index');
+
+$routes->get('/import', 'ImportController::index');
+$routes->post('/import/upload', 'ImportController::upload');
