@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choix Caisse</title>
 </head>
+
+<?php echo view('Partials/Header')?>
 <body>
     <div class="container">
         <form action="/caisse/valider" method="post">

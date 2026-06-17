@@ -8,6 +8,10 @@ class AchatController extends BaseController
     {
         $session = session();
         
+        if (!$session->get('logged_in')) {
+            return redirect()->to('/');
+        }
+
         if (!$session->has('caisse_active')) {
             return redirect()->to('/'); 
         }

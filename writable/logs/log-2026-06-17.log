@@ -51,3 +51,42 @@ in SYSTEMPATH/Database/BaseConnection.php on line 606.
 11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
 12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
 13 SYSTEMPATH/rewrite.php(44): require_once('/home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php')
+CRITICAL - 2026-06-17 07:15:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Auth.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php')
+CRITICAL - 2026-06-17 07:15:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Auth.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php')
+CRITICAL - 2026-06-17 07:16:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "auth/login.php"
+[Method: GET, Route: /]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1250): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Auth.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\Auth->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH/rewrite.php(44): require_once('/home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php')
