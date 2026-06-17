@@ -20,4 +20,7 @@ $routes->get('/import', 'ImportController::index');
 $routes->post('/import/upload', 'ImportController::upload');
 
 $routes->get('/achat', 'AchatController::index');
-$routes->post('/achat/enregistrer', 'AchatController::enregistrer');
+// $routes->post('/achat/enregistrer', 'AchatController::enregistrer');
+
+$routes->post('/achat/ajouter', 'AchatController::ajouter');
+$routes->post('/achat/cloturer', 'AchatController::cloturer');

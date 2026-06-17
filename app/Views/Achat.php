@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saisie des Achats</title>
+    <link rel="stylesheet" href="<?= base_url('assets/css/achat.css') ?>">
 </head>
+<?php echo view('Partials/Header') ?>
 <body>
     <div class="header">
         <h2>Bienvenue sur la saisie des achats</h2>
@@ -14,7 +16,10 @@
         <hr>
     </div>
 
-    <form method="post" action="<?= site_url('achat/enregistrer') ?>">
+    <form method="post" action="<?= site_url('achat/ajouter') ?>">
+
+    <input type="text" id="client" name="client" placeholder="Nom du client" required>
+
         <select name="produit" id="produit">
             <?php foreach($produits as $produit): ?>
                 <option value="<?= $produit['id'] ?>">
@@ -51,5 +56,11 @@
         </table>
         <p>Total : <span id="total"><?= $total ?></span> Ar</p>
     </div>
+
+    <h4>Client : <?= session()->get('client') ?></h4>
+
+    <form method="post" action="<?= site_url('achat/cloturer') ?>">
+        <button type="submit" style="background:green;color:white;">Clôturer achat</button>
+    </form>
 </body>
 </html>
