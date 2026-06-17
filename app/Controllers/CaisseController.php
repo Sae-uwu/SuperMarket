@@ -8,6 +8,10 @@ class CaisseController extends BaseController
 {
     public function afficherCaisse()
     {
+        if (!session()->get('logged_in')) {
+            return redirect()->to('/');
+        }
+
         $caisseModel = new CaisseModel();
         
         $data['caisses'] = $caisseModel->findAll(); 
