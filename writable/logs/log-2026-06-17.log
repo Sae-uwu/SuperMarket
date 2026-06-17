@@ -1,0 +1,53 @@
+ERROR - 2026-06-17 06:49:51 --> Error connecting to the database: Exception: Unable to open database: unable to open database file in /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/SQLite3/Connection.php:111
+Stack trace:
+#0 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/SQLite3/Connection.php(111): SQLite3->__construct()
+#1 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#2 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#3 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#4 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#5 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#6 /home/Hoshiina/INFO/S4/SI/Supermarket/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#7 /home/Hoshiina/INFO/S4/SI/Supermarket/app/Controllers/CaisseController.php(13): CodeIgniter\BaseModel->findAll()
+#8 /home/Hoshiina/INFO/S4/SI/Supermarket/system/CodeIgniter.php(951): App\Controllers\CaisseController->afficherCaisse()
+#9 /home/Hoshiina/INFO/S4/SI/Supermarket/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /home/Hoshiina/INFO/S4/SI/Supermarket/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#13 /home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#14 /home/Hoshiina/INFO/S4/SI/Supermarket/system/rewrite.php(44): require_once('...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: SQLite3 error: Unable to open database: unable to open database file in /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/SQLite3/Connection.php:118
+Stack trace:
+#0 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/BaseConnection.php(555): CodeIgniter\Database\SQLite3\Connection->connect()
+#1 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+#2 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+#3 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/Hoshiina/INFO/S4/SI/Supermarket/system/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+#6 /home/Hoshiina/INFO/S4/SI/Supermarket/app/Controllers/CaisseController.php(13): CodeIgniter\BaseModel->findAll()
+#7 /home/Hoshiina/INFO/S4/SI/Supermarket/system/CodeIgniter.php(951): App\Controllers\CaisseController->afficherCaisse()
+#8 /home/Hoshiina/INFO/S4/SI/Supermarket/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/Hoshiina/INFO/S4/SI/Supermarket/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /home/Hoshiina/INFO/S4/SI/Supermarket/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 /home/Hoshiina/INFO/S4/SI/Supermarket/system/rewrite.php(44): require_once('...')
+#14 {main}
+CRITICAL - 2026-06-17 06:49:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [SQLite3]: SQLite3 error: Unable to open database: unable to open database file
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/SQLite3/Connection.php(74): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\SQLite3\Connection->initialize()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll()
+ 6 APPPATH/Controllers/CaisseController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH/CodeIgniter.php(951): App\Controllers\CaisseController->afficherCaisse()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/rewrite.php(44): require_once('/home/Hoshiina/INFO/S4/SI/Supermarket/public/index.php')

@@ -57,7 +57,7 @@ class Database extends Config
     //     * @var array<string, mixed>
     //     */
     public array $default = [
-        'database'    => 'DB_CAISSE.db',
+        'database'    => ROOTPATH . 'db/DB_CAISSE.db',
         'DBDriver'    => 'SQLite3',
         'DBPrefix'    => '',
         'DBDebug'     => true,

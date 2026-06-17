@@ -7,16 +7,20 @@
 </head>
 <body>
     <div class="container">
-        <select name="caisse" id="caisse">
-            <option value="1">Caisse 1</option>
-        </select>
-        <button onclick="valider()">Valider</button>
+        <form action="/caisse/valider" method="post">
+            <select name="caisse" id="caisse">
+                <?php if (!empty($caisses)): ?>
+                    <?php foreach ($caisses as $caisse): ?>
+                        <option value="<?= esc($caisse['id']) ?>">
+                            Caisse <?= esc($caisse['numero']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <option value="">Aucune caisse disponible</option>
+                <?php endif; ?>
+            </select>
+            <button type="submit">Valider</button>
+        </form>
     </div>
-    <script>
-        function valider() {
-            var caisse = document.getElementById("caisse").value;
-            window.location.href = "/caisse/" + caisse;
-        }
-    </script>
 </body>
 </html>
